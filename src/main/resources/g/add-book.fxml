@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="440.0" prefWidth="430.0" style="-fx-background-color: CADETBLUE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="g.controllers.AddBook">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="402.0" layoutX="44.0" layoutY="17.0" opacity="0.24" stroke="BLACK" strokeType="INSIDE" width="342.0" />
+      <Text layoutX="154.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Book">
+         <font>
+            <Font name="Impact" size="35.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" layoutX="110.0" layoutY="113.0" prefHeight="27.0" prefWidth="218.0" promptText="Name" />
+      <TextField fx:id="author" layoutX="110.0" layoutY="154.0" prefHeight="27.0" prefWidth="218.0" promptText="Author" />
+      <TextField fx:id="genre" layoutX="111.0" layoutY="252.0" prefHeight="27.0" prefWidth="218.0" promptText="Genre" />
+      <TextArea fx:id="description" layoutX="110.0" layoutY="196.0" prefHeight="43.0" prefWidth="218.0" promptText="Short Description" wrapText="true" />
+      <Button fx:id="add" layoutX="242.0" layoutY="355.0" mnemonicParsing="false" text="+ Add Book">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="50.0" layoutY="24.0" mnemonicParsing="false" text="Back">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="amount" layoutX="111.0" layoutY="292.0" prefHeight="27.0" prefWidth="218.0" promptText="Amount" />
+   </children>
+</AnchorPane>

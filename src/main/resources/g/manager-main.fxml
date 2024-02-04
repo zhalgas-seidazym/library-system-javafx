@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: WHITESMOKE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="g.controllers.ManagerMain">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="86.0" prefWidth="889.0" style="-fx-background-color: WHITESMOKE;">
+         <children>
+            <AnchorPane layoutX="651.0" layoutY="25.0" prefHeight="35.0" prefWidth="225.0" style="-fx-border-color: grey; -fx-border-radius: 15;">
+               <children>
+                  <Text fx:id="name" layoutX="17.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="190.40000000000003">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text layoutX="27.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library">
+               <font>
+                  <Font name="Impact" size="35.0" />
+               </font>
+            </Text>
+            <Text fill="CADETBLUE" layoutX="134.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System">
+               <font>
+                  <Font name="Impact" size="35.0" />
+               </font>
+            </Text>
+            <Separator layoutX="248.0" layoutY="18.0" orientation="VERTICAL" prefHeight="56.0" prefWidth="0.0" />
+            <Separator layoutX="627.0" layoutY="15.0" orientation="VERTICAL" prefHeight="56.0" prefWidth="0.0" />
+            <Separator layoutX="1.0" layoutY="81.0" prefHeight="0.0" prefWidth="900.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="219.0" layoutY="89.0" prefHeight="502.0" prefWidth="506.0" style="-fx-background-color: SNOW;">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="250.0" prefWidth="476.0" style="-fx-background-color: snow;">
+               <children>
+                  <TextField fx:id="title" focusTraversable="false" promptText="Set title">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextArea fx:id="message" focusTraversable="false" prefHeight="126.0" prefWidth="255.0" promptText="Write message here" wrapText="true">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextArea>
+                  <Button fx:id="send" mnemonicParsing="false" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: cadetblue;" text="Send" textFill="CADETBLUE">
+                     <font>
+                        <Font name="Impact" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="741.0" layoutY="89.0" prefHeight="432.0" prefWidth="147.0" style="-fx-background-color: SNOW;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Notes" wrappingWidth="91.356201171875">
+               <font>
+                  <Font name="Impact" size="37.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <TextArea focusTraversable="false" prefHeight="365.0" prefWidth="147.0" promptText="Write your notes here" wrapText="true">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="282.0" maxHeight="-Infinity" prefHeight="150.0" prefWidth="190.0" style="-fx-background-color: snow;">
+         <children>
+            <Button fx:id="notify" mnemonicParsing="false" prefHeight="37.0" prefWidth="156.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: cadetblue;" text="Notify" textFill="CADETBLUE">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Notify users that the &#10;book deposit date&#10;has expired" textAlignment="CENTER" wrappingWidth="179.6653435230255">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="438.0" prefHeight="150.0" prefWidth="190.0" style="-fx-background-color: SNOW;">
+         <children>
+            <Button fx:id="add" mnemonicParsing="false" prefHeight="37.0" prefWidth="156.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: cadetblue;" text="+ Add Book" textFill="CADETBLUE">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add book to database">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="849.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/L.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signOut" layoutX="741.0" layoutY="546.0" mnemonicParsing="false" style="-fx-background-color: CADETBLUE; -fx-background-insets: 3; -fx-background-radius: 5;" text="Sign Out">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Button>
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="91.0" maxHeight="-Infinity" prefHeight="169.0" prefWidth="190.0" style="-fx-background-color: snow;">
+         <children>
+            <HBox maxHeight="-Infinity" prefHeight="59.0" prefWidth="177.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Books:" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <Text fx:id="books" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="132.7999906539917">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="refresh" fill="CADETBLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="Refresh">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

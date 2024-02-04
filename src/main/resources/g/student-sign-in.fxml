@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: Cadetblue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="g.controllers.StudentSignIn">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="274.0" style="-fx-background-color: AZURE;">
+         <children>
+            <Button fx:id="aboutUsButton" layoutX="97.0" layoutY="538.0" mnemonicParsing="false" style="-fx-background-color: CADETBLUE; -fx-background-radius: 10;" text="About Us" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="289.0" prefHeight="125.0" prefWidth="238.0" text="      New Here?" textFill="CADETBLUE">
+               <font>
+                  <Font name="Impact" size="40.0" />
+               </font>
+            </Label>
+            <Text fill="CADETBLUE" layoutX="19.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up and discover a lot of new books" wrappingWidth="238.39999999999998">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="studentSignUpButton" layoutX="84.0" layoutY="415.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="98.0" style="-fx-background-color: CADETBLUE; -fx-background-insets: 2; -fx-background-radius: 5;" text="Sign Up" textFill="AZURE">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="58.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/book.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="30.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library" wrappingWidth="108.826171875">
+               <font>
+                  <Font name="Impact" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="DARKCYAN" layoutX="136.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System">
+               <font>
+                  <Font name="Impact" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="271.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="24.0" style="-fx-background-color: DARKCYAN;" />
+      <ImageView fitHeight="602.0" fitWidth="600.0" layoutX="303.0" opacity="0.06" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/tree.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameField" layoutX="441.0" layoutY="183.0" prefHeight="30.0" prefWidth="252.0" promptText="Username" style="-fx-background-color: azure; -fx-background-radius: 5;" />
+      <PasswordField fx:id="passwordField" layoutX="441.0" layoutY="243.0" prefHeight="30.0" prefWidth="252.0" promptText="Password" style="-fx-background-color: azure; -fx-background-radius: 5;" />
+      <Label layoutX="368.0" layoutY="74.0" prefHeight="90.0" prefWidth="374.0" text="Login to your account">
+         <font>
+            <Font name="Impact" size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutX="360.0" layoutY="148.0" prefHeight="3.0" prefWidth="374.0" />
+      <Button fx:id="studentSignInButton" layoutX="623.0" layoutY="294.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="69.0" style="-fx-background-color: Azure; -fx-background-insets: 2; -fx-background-radius: 5;" styleClass="myButton" stylesheets="@style/style.css" text="Sign In">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="forgotPassword" layoutX="450.0" layoutY="300.0" prefHeight="18.0" prefWidth="109.0" text="Forgot password?">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="393.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="393.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/lock.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="373.0" layoutY="425.0" opacity="0.23" stroke="BLACK" strokeType="INSIDE" width="374.0" />
+      <Text layoutX="469.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager Entry ">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="managerSignInButton" layoutX="519.0" layoutY="474.0" mnemonicParsing="false" style="-fx-background-color: Azure; -fx-background-insets: 2; -fx-background-radius: 5;" text="Sign In">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="show" layoutX="711.0" layoutY="250.0" mnemonicParsing="false" text="Show" />
+   </children>
+</AnchorPane>
