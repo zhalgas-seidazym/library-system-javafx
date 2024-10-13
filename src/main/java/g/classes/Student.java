@@ -92,7 +92,7 @@ public class Student {
 
     public void addDBBookOrder(BookOrder bookOrder){
         addBookOrder(bookOrder);
-        String order = "INSERT INTO BookOrders (order_id, student_id, book_id, taken_date, due_date) " +
+        String order = "INSERT INTO BookOrders (order_id, student_id, book_id, taken_date, due_date)" +
                 "VALUES (?, ?, ?, ?, ?)";
 
         try {
@@ -166,3 +166,5 @@ public class Student {
                 '}';
     }
 }
+
+
